@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* Shared CareerPilot workspace theme for every authenticated screen. */
+.app-theme {
+  min-height: 100vh;
+  background: #0c0b09;
+  color: #eee5d5;
+}
+
+.app-theme [class*="bg-white"],
+.app-theme [class*="bg-gray-50"],
+.app-theme [class*="bg-slate-50"],
+.app-theme [class*="bg-gray-100"],
+.app-theme [class*="bg-slate-100"] {
+  background-color: #15130f !important;
+}
+
+.app-theme [class*="bg-blue-50"],
+.app-theme [class*="bg-blue-100"],
+.app-theme [class*="bg-purple-50"],
+.app-theme [class*="bg-indigo-50"] {
+  background-color: #241e14 !important;
+}
+
+.app-theme [class*="bg-blue-500"],
+.app-theme [class*="bg-blue-600"],
+.app-theme [class*="bg-blue-700"],
+.app-theme [class*="bg-indigo-600"],
+.app-theme [class*="bg-purple-600"] {
+  background-color: #b58a3c !important;
+  color: #17130c !important;
+}
+
+.app-theme [class*="from-blue-"],
+.app-theme [class*="to-indigo-"],
+.app-theme [class*="from-indigo-"] {
+  background-image: linear-gradient(110deg, #6f542b, #211b12) !important;
+  --tw-gradient-from: #6f542b var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(111 84 43 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.app-theme [class*="to-indigo-"] { --tw-gradient-to: #211b12 var(--tw-gradient-to-position) !important; }
+
+.app-theme [class*="text-gray-800"],
+.app-theme [class*="text-gray-700"],
+.app-theme [class*="text-gray-900"],
+.app-theme [class*="text-slate-800"],
+.app-theme [class*="text-slate-700"],
+.app-theme [class*="text-slate-900"] { color: #eee5d5 !important; }
+.app-theme [class*="text-gray-600"],
+.app-theme [class*="text-gray-500"],
+.app-theme [class*="text-slate-600"],
+.app-theme [class*="text-slate-500"] { color: #a99c85 !important; }
+
+.app-theme [class*="text-blue-"],
+.app-theme [class*="text-indigo-"],
+.app-theme [class*="text-purple-"] { color: #e4c27e !important; }
+
+.app-theme [class*="border-gray-100"],
+.app-theme [class*="border-gray-200"],
+.app-theme [class*="border-slate-200"],
+.app-theme [class*="border-slate-300"] { border-color: #403626 !important; }
+.app-theme [class*="border-blue-"],
+.app-theme [class*="border-indigo-"] { border-color: #806438 !important; }
+
+.app-theme input,
+.app-theme select,
+.app-theme textarea {
+  color: #eee5d5;
+  background-color: #11100e;
+  border-color: #51432c;
+}
+.app-theme input::placeholder,
+.app-theme textarea::placeholder { color: #807766; }
+.app-theme input:focus,
+.app-theme select:focus,
+.app-theme textarea:focus { --tw-ring-color: #c49a50; border-color: #c49a50; }
+
+.app-theme [class*="bg-green-50"] { background-color: #17231a !important; }
+.app-theme [class*="bg-red-50"] { background-color: #281916 !important; }
+
+.app-theme .landing-hero-copy {
+  background-image:
+    linear-gradient(90deg, rgb(12 11 9 / 58%) 0%, rgb(12 11 9 / 32%) 100%),
+    url("/careerpilot-home.png") !important;
+  background-size: cover;
+  background-position: right center;
+}
+
+.app-theme .auth-hero-panel {
+  background-image:
+    linear-gradient(120deg, rgb(12 11 9 / 78%), rgb(12 11 9 / 48%)),
+    url("/careerpilot-home.png") !important;
+  background-size: cover;
+  background-position: center;
+  color: #fff5df !important;
+}
+
+.app-theme .auth-card {
+  border: 1px solid rgb(178 141 79 / 55%);
+  background: rgb(17 16 14 / 96%) !important;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 48%);
+}
+
+
+
